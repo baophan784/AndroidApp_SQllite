@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmHike"
+    android:background="@drawable/background"
+    >
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Hike"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/cf_hikename_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+
+        android:hint="Name of hike"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+
+    <EditText
+        android:id="@+id/cf_location_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_hikename_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Location"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <EditText
+        android:id="@+id/cf_length_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_location_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Length of hike"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <EditText
+        android:id="@+id/cf_dif_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_length_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Difficult"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <TextView
+        android:id="@+id/cf_textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_dif_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Start date (*):"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/cf_Fdate_txt"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_dif_txt"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/cf_textView10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <TextView
+        android:id="@+id/cf_textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_textView10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="27dp"
+        android:text="Parking(*):"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/cf_desc_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_dif_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter description"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:minHeight="60dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back_bt"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cf_dif_txt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="211dp"
+        android:background="@drawable/btn"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/confirm_bt"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cf_dif_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/btn"
+        android:text="Confirm" />
+
+    <RadioButton
+        android:id="@+id/cf_parkYes"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cf_Fdate_txt"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/cf_textView11"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/cf_parkNo"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cf_Fdate_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@+id/parkYes"
+        android:text="No" />
+
+</RelativeLayout>
