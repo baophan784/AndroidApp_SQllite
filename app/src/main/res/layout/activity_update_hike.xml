@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_Hike"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/Update_Hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Update Hike"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/u_hikename_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_Hike"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Name of hike"
+        android:minHeight="35dp"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+
+    <EditText
+        android:id="@+id/u_location_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_hikename_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Location"
+        android:minHeight="35dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <EditText
+        android:id="@+id/u_length_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_location_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Length of hike"
+        android:minHeight="35dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <EditText
+        android:id="@+id/u_dif_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_length_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:hint="Difficult"
+        android:minHeight="35dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_dif_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Start date (*):"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/u_Fdate_txt"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_dif_txt"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/textView10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:minHeight="35dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:autofillHints=""
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="27dp"
+        android:text="Parking(*):"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/u_parkRadioGroup"
+        android:layout_width="217dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/u_Fdate_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/u_parkYes"
+            android:layout_width="79dp"
+            android:layout_height="35dp"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/u_parkNo"
+            android:layout_width="97dp"
+            android:layout_height="35dp"
+            android:text="No" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/u_desc_txt"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_parkRadioGroup"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="37dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter description"
+        android:inputType="textMultiLine"
+
+        android:minHeight="60dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/editext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/UD_cancel_bt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/u_desc_txt"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="16dp"
+        android:text="Cancel"
+        android:background="@drawable/btn_cancel"/>
+
+    <Button
+        android:id="@+id/UD_update_bt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/u_desc_txt"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/UD_cancel_bt"
+        android:background="@drawable/btn"
+        android:text="Update" />
+
+
+</RelativeLayout>
